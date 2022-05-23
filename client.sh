@@ -6,7 +6,7 @@ if [ -f './optimizer/optimizer.pth' ]; then
     rm './optimizer/optimizer.pth'
 fi
 
-rounds="10"
+rounds="3"
 
 for r in $(seq 1 1 $rounds)
 do
