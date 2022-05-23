@@ -112,7 +112,7 @@ def accept_func():
     server_socket.listen(5)
 
     # rounds
-    for r in range(30):
+    for r in range(3):
         try:
             #클라이언트 함수가 접속하면 새로운 소켓을 반환한다.
             client_socket, addr = server_socket.accept()
