@@ -24,4 +24,4 @@ torch.save(testset, './data/testset.pth')
 for i in range(len(IP_list)):
     torch.save(datasets['local'][i], './data/trainset.pth')
     
-    os.system('scp ./data/trainset.pth osilab@%s:~/nn-dist-train/Jetson/data' % IP_list[i])
+    os.system('scp ./data/trainset.pth osilab@%s:~/jetson_fl/data' % IP_list[i])
